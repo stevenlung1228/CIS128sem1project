@@ -172,12 +172,13 @@ def edit():
         else:
             print("Something went wrong, Please contact support !!!\n")
 
+
 while True:
     try:
-        f = open("student_database.txt", mode='r', encoding='utf-8')
+        file = open("student_database.txt", mode='r', encoding='utf-8')
     except FileNotFoundError:
-        f = open("student_database.txt", mode='x', encoding='utf-8')
-        f.close()
+        file = open("student_database.txt", mode='x', encoding='utf-8')
+        file.close()
     else:
         break
 close_action = "N"
@@ -212,4 +213,3 @@ while operation_code != 6 or close_action != "Y":
         add()
     elif operation_code == 2:
         delete_item()
-
