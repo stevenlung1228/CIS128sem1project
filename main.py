@@ -1,3 +1,29 @@
+'''
+Here is a  program to build a simple Student Management System using Python. 
+In order to ensure the data entry is in standardised format. Some of the input validation is added to the system, e.g num_check(), name_validation(),
+name_duplication() and name_found(). 
+To fullfil the functions of following, add(), view(), view_all(), delete_item() and edit() funcations are created in this programme. 
+- Add record 
+- Delete record 
+- View
+- View all 
+- Update record 
+- Exist programme 
+
+Test cases coverage : 
+- txt file is created 
+- Add a record which can be found in txt file 
+- Delect a record 
+- Update a record which is allowing user to change name (as it is the unique key for data, extra steps are added to the program and it allow
+    user to re-consider whether they want change the name) 
+- check name duplication for entry, assumed no duplcation data is allowed in the system in which unique id would be the student name
+- All input data should have a standard format e.g 
+    - Student name should be Englist letter only, format example = Steven Lung
+    - Age should be integer within the range of 10 - 120
+    - Gender should be either "F" or "M"
+'''
+
+
 def num_check(number):
     while True:
         try:
